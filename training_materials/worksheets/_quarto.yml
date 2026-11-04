@@ -1,0 +1,5 @@
+project:
+  type: default
+  render:
+    - Day_01_Quick_Tutorials_Worksheet.qmd
+    - Day_02_Top_Down_Practical_Guide.qmd

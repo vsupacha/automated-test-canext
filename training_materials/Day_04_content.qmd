@@ -1,0 +1,30 @@
+---
+title: "Automated Test Workshop"
+subtitle: "LabVIEW, TestStand, Python, myRIO, cDAQ, PicoScope"
+author: "Asst. Prof. Dr. Supachai Vorapojpisut"
+date: "11/8/2569"
+date-format: long
+title-slide-attributes:
+    data-background-image: figs/background.png
+    data-background-size: contain
+    data-background-opacity: "0.2"
+lang: en
+format: 
+    revealjs:
+        logo: figs/TSE_logo.svg
+        footer: Thailand Skill Bridge (B0C690121) BOI STEM++ grant 2026
+        slide-number: true
+        show-slide-number: all 
+        theme: default
+---
+
+{{< include 00_day_04_overview.md >}}
+
+# 1. PyVISA and Streamlit
+{{< include PY_01_PyVISA.md >}}
+
+# 2. PicoScope
+{{< include Instr_04_scope.md >}} 
+
+# 3. CAN bus
+{{< include CAN_01_bus.md >}}

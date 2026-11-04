@@ -1,0 +1,16 @@
+# Local Quarto render products
+training_materials/Day_*_content.html
+training_materials/*_files/
+training_materials/.quarto/
+.quarto/
+_site/
+__pycache__/
+*.py[cod]
+.claude/
+
+# Workshop files are provided on the workshop PCs, not published
+workshop/
+tmp/
+output/
+training_materials/worksheets/*.html
+training_materials/worksheets/*_files/

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="260" viewBox="0 0 1100 260" role="img" aria-labelledby="title desc">
+<title id="title">Two-zone thermal controller test bench</title><desc id="desc">myRIO applies two sensor voltages to NUCLEO inputs A0 and A1, monitors those voltages and measures PWM0 and PWM1 independently.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#236390"/></marker></defs>
+<rect width="1100" height="260" rx="16" fill="#f5f8fb"/>
+<g fill="#e5eff7" stroke="#236390" stroke-width="2"><rect x="35" y="48" width="260" height="160" rx="10"/><rect x="700" y="48" width="365" height="160" rx="10"/></g>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#17364d"><text x="165" y="89" font-size="28">myRIO</text><text x="165" y="125" font-size="22">Stimulus + measurement</text><text x="165" y="162" font-size="20">MXP-A: AO / AI / DIO</text><text x="883" y="89" font-size="28">NUCLEO-C562RE</text><text x="883" y="125" font-size="22">2-zone teaching firmware</text><text x="883" y="162" font-size="20">A0-A1 → PWM0-PWM1</text></g>
+<g stroke="#236390" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M295 88 H690"/><path d="M700 174 H305"/></g>
+<g font-family="Arial,sans-serif" text-anchor="middle" font-size="21" fill="#236390"><text x="495" y="65">Two sensor voltages</text><text x="495" y="154">Two PWM outputs</text><text x="550" y="242">Common ground · Separate board power · Logic signals only</text></g></svg>

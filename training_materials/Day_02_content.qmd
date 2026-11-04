@@ -1,0 +1,33 @@
+---
+title: "Automated Test Workshop"
+subtitle: "LabVIEW, TestStand, Python, myRIO, cDAQ, PicoScope"
+author: "Asst. Prof. Dr. Supachai Vorapojpisut"
+date: "11/6/2569"
+date-format: long
+title-slide-attributes:
+    data-background-image: figs/background.png
+    data-background-size: contain
+    data-background-opacity: "0.2"
+lang: en
+format: 
+    revealjs:
+        logo: figs/TSE_logo.svg
+        footer: Thailand Skill Bridge (B0C690121) BOI STEM++ grant 2026
+        slide-number: true
+        show-slide-number: all 
+        theme: default
+---
+
+{{< include 00_day_02_overview.md >}}
+
+# 1. DUT measurement
+{{< include Instr_01_overview.md >}}
+
+# 2. Programming CompactDAQ 
+{{< include Instr_02_cDAQ.md >}}
+
+# 3. Programming instruments 
+{{< include Instr_03_VISA.md >}}
+
+# 4. Workshop: opamp testing
+{{< include Day_02_workshop.md >}}

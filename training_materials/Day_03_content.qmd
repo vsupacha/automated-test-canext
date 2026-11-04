@@ -1,0 +1,30 @@
+---
+title: "Automated Test Workshop"
+subtitle: "LabVIEW, TestStand, Python, myRIO, cDAQ, PicoScope"
+author: "Asst. Prof. Dr. Supachai Vorapojpisut"
+date: "11/7/2569"
+date-format: long
+title-slide-attributes:
+    data-background-image: figs/background.png
+    data-background-size: contain
+    data-background-opacity: "0.2"
+lang: en
+format: 
+    revealjs:
+        logo: figs/TSE_logo.svg
+        footer: Thailand Skill Bridge (B0C690121) BOI STEM++ grant 2026
+        slide-number: true
+        show-slide-number: all 
+        theme: default
+---
+
+{{< include 00_day_03_overview.md >}}
+
+# 1. NI TestStand
+{{< include TS_01_TestStand_overview.md >}}
+
+# 2. TestStand workflow
+{{< include TS_02_TestStand_workflow.md >}}
+
+# 3. Workshop: LM321 test
+{{< include TS_03_TestStand_practice.md >}}

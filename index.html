@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Automated Test Workshop | Dashboard</title>
+  <meta name="description" content="Four-day automated test workshop for industry test engineers: LabVIEW, myRIO, instrument drivers, TestStand, Python and CAN bus." />
+  <style>
+    :root{
+      --bg:#fff3c4; --text:#3a0a0e; --muted:#5e3a1e; --cyan:#a50d24; --blue:#c8102e; --green:#15803d; --yellow:#c8102e;
+      --line:rgba(165,13,36,.22); --shadow:0 18px 50px rgba(160,110,20,.12); --radius:22px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Segoe UI",Tahoma,sans-serif;background:radial-gradient(circle at 20% 0%,#fffaf0 0,#fff3c4 45%,#ffe9a8 100%);background-color:var(--bg);color:var(--text);line-height:1.65}
+    a{color:var(--cyan);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1180px;margin:auto;padding:28px 18px 64px}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;margin-top:10px}
+    .badge{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:rgba(200,16,46,.08);border-radius:999px;padding:7px 13px;color:#7a0a1c;font-size:14px}
+    h1{font-size:clamp(32px,5vw,58px);line-height:1.05;margin:18px 0 14px}
+    .lead{font-size:19px;color:var(--muted);max-width:760px}
+    .card,.hero-card{background:linear-gradient(180deg,rgba(255,252,240,.96),rgba(255,246,220,.96));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .hero-card{padding:18px}.hero-card img{width:100%;border-radius:16px;background:#fff;display:block}
+    .grid{display:grid;gap:18px}.grid-4{grid-template-columns:repeat(4,1fr)}.grid-2{grid-template-columns:repeat(2,1fr)}
+    .section{margin-top:28px}.card{padding:22px}
+    .stat{font-size:34px;font-weight:800}.label{color:var(--muted);font-size:14px}.muted{color:var(--muted)}
+    .tag{display:inline-block;padding:5px 10px;border-radius:999px;background:rgba(200,16,46,.10);border:1px solid var(--line);font-size:13px;color:#7a0a1c;margin:4px 4px 0 0}
+    h2{font-size:26px;margin:0 0 14px}h3{margin:0 0 6px}
+    .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+    .btn{display:inline-flex;align-items:center;padding:11px 16px;border-radius:14px;font-weight:700;border:1px solid var(--line);background:rgba(200,16,46,.12)}
+    .btn.primary{background:linear-gradient(135deg,#d94a5c,#c8102e);color:#fff;border:0}
+    .day{display:grid;grid-template-columns:96px 1fr 1fr auto;gap:18px;align-items:start;padding:18px;border:1px solid var(--line);border-radius:18px;background:rgba(200,16,46,.04);margin-top:12px}
+    .day .no{font-size:22px;font-weight:800;color:var(--cyan)}
+    .day ul{margin:4px 0 0;padding-left:18px}.day .ws{color:var(--yellow);font-weight:700;font-size:14px}
+    .links{display:flex;flex-direction:column;gap:8px;min-width:150px}
+    .placeholder{border:1px dashed rgba(165,13,36,.4);border-radius:14px;padding:12px 14px;color:var(--muted);background:rgba(255,255,255,.5)}
+    table{width:100%;border-collapse:collapse}th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{color:#7a0a1c;background:rgba(200,16,46,.09)}tr:last-child td{border-bottom:0}
+    .table-scroll{overflow-x:auto}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .gallery figure{margin:0}.gallery img{width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff;border-radius:12px;display:block}
+    .gallery figcaption{font-size:13px;color:var(--muted);margin-top:4px}
+    footer{margin-top:34px;color:var(--muted);font-size:14px;text-align:center}
+    @media(max-width:900px){.hero,.grid-4,.grid-2{grid-template-columns:1fr}.day{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.wrap{padding:18px 16px 48px}}
+  </style>
+</head>
+<body>
+<main class="wrap">
+
+  <section class="hero">
+    <div>
+      <span class="badge">Thailand Skill Bridge project · Nov 5–8, 2026 · 9:00–17:00</span>
+      <h1>Automated Test for Functional Testing</h1>
+      <p class="lead">A four-day hands-on workshop for test engineers: build automated test systems with NI LabVIEW, myRIO and programmable instruments, sequence them with NI TestStand, and extend them with Python and CAN bus testing.</p>
+      <div>
+        <span class="tag">LabVIEW</span><span class="tag">myRIO</span><span class="tag">DAQmx / VISA / SCPI</span>
+        <span class="tag">TestStand</span><span class="tag">PyVISA</span><span class="tag">CAN / CANopen</span>
+      </div>
+      <div class="btns">
+        <a class="btn primary" href="#schedule">Schedule &amp; materials</a>
+        <a class="btn" href="https://maps.app.goo.gl/ZcER8o5m1GwPpXF38">Venue map</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img src="training_materials/figs/00_TSE_experiment.jpg" alt="Automated test experiment hardware used in the workshop" />
+    </div>
+  </section>
+
+  <section class="section grid grid-4">
+    <div class="card"><div class="stat">4</div><div class="label">days, 9:00–17:00</div></div>
+    <div class="card"><div class="stat">4</div><div class="label">hands-on workshops</div></div>
+    <div class="card"><div class="stat">Nov 5–8</div><div class="label">2026</div></div>
+    <div class="card"><div class="stat">Room 508</div><div class="label"><a href="https://maps.app.goo.gl/ZcER8o5m1GwPpXF38">Thammasat School of Engineering (map)</a></div></div>
+  </section>
+
+  <section class="section grid grid-2">
+    <div class="card">
+      <h2>Who it is for</h2>
+      <p class="muted">Test and validation engineers who build or maintain functional test stations for electronic control boards. Basic electronics and measurement knowledge is assumed; prior LabVIEW experience helps but is not required.</p>
+    </div>
+    <div class="card">
+      <h2>What you will be able to do</h2>
+      <ul class="muted">
+        <li>Acquire and generate signals with LabVIEW and myRIO</li>
+        <li>Control programmable instruments with DAQmx, VISA and SCPI</li>
+        <li>Build PASS/FAIL test sequences and reports in TestStand</li>
+        <li>Automate instruments and test CAN/CANopen devices from Python</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section card" id="schedule">
+    <h2>Schedule and training materials</h2>
+    <p class="muted">Slides open in the browser. Press <b>F</b> for full screen and <b>S</b> for speaker view.</p>
+
+    <div class="day">
+      <div class="no">Day 1</div>
+      <div><h3>LabVIEW + myRIO</h3><ul class="muted"><li>Automated test equipment</li><li>LabVIEW tutorials</li><li>Analog loopback with myRIO</li></ul></div>
+      <div><span class="ws">Workshop</span><p class="muted">ADS1115 I²C ADC test with a state-machine VI</p></div>
+      <div class="links"><a class="btn" href="training_materials/Day_01_content.html">Slides →</a><a href="training_materials/worksheets/Day_01_Quick_Tutorials_Worksheet.pdf">Worksheet (PDF)</a></div>
+    </div>
+
+    <div class="day">
+      <div class="no">Day 2</div>
+      <div><h3>Instrument drivers</h3><ul class="muted"><li>Programmable instruments</li><li>DAQmx and VISA/SCPI drivers</li><li>CompactDAQ and PicoScope</li></ul></div>
+      <div><span class="ws">Workshop</span><p class="muted">LM321 op-amp offset voltage V<sub>OS</sub> and supply current I<sub>S</sub> test</p></div>
+      <div class="links"><a class="btn" href="training_materials/Day_02_content.html">Slides →</a><a href="training_materials/worksheets/Day_02_Top_Down_Practical_Guide.pdf">Practical guide (PDF)</a></div>
+    </div>
+
+    <div class="day">
+      <div class="no">Day 3</div>
+      <div><h3>NI TestStand</h3><ul class="muted"><li>Sequences, action and test steps</li><li>Code modules and adapters</li><li>Process models and callbacks</li></ul></div>
+      <div><span class="ws">Workshop</span><p class="muted">LM321 DC test sequence with PASS/FAIL limits and report</p></div>
+      <div class="links"><a class="btn" href="training_materials/Day_03_content.html">Slides →</a></div>
+    </div>
+
+    <div class="day">
+      <div class="no">Day 4</div>
+      <div><h3>Python for testing</h3><ul class="muted"><li>PyVISA and Streamlit</li><li>Automotive networks, CAN bus and CANopen</li></ul></div>
+      <div><span class="ws">Workshop</span><p class="muted">CANopen firmware test on a NUCLEO DUT</p></div>
+      <div class="links"><a class="btn" href="training_materials/Day_04_content.html">Slides →</a></div>
+    </div>
+  </section>
+
+  <section class="section card">
+    <h2>Workshop hardware</h2>
+    <div class="gallery">
+      <figure><img src="training_materials/figs/00_myRIO.jpg" alt="NI myRIO" /><figcaption>NI myRIO</figcaption></figure>
+      <figure><img src="training_materials/figs/00_ADS1115_board.jpg" alt="ADS1115 board" /><figcaption>Day 1 – ADS1115 ADC</figcaption></figure>
+      <figure><img src="training_materials/figs/00_LM321_fixture.jpg" alt="LM321 fixture" /><figcaption>Days 2–3 – LM321 fixture</figcaption></figure>
+      <figure><img src="training_materials/figs/00_CAN_experiment.jpg" alt="CAN experiment" /><figcaption>Day 4 – CAN bus setup</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section grid grid-2">
+    <div class="card">
+      <h2>Software on the workshop PCs</h2>
+      <ul class="muted">
+        <li>NI LabVIEW 2021 with myRIO Toolkit</li>
+        <li>NI LabVIEW 2026 Q1</li>
+        <li>NI TestStand 2026 Q1</li>
+      </ul>
+      <p class="muted">No installation is needed. Project files, firmware and test sequences are provided on the workshop PCs.</p>
+    </div>
+    <div class="card">
+      <h2>Venue</h2>
+      <p class="muted">Room 508, Thammasat School of Engineering<br>Nov 5–8, 2026 · 9:00–17:00</p>
+      <a class="btn primary" href="https://maps.app.goo.gl/ZcER8o5m1GwPpXF38">Open Google Maps</a>
+    </div>
+  </section>
+
+  <footer>
+    Thammasat School of Engineering, Thammasat University ·
+    Based on the <a href="https://vsupacha.github.io/automated-test/">Automated Test workshop</a>
+  </footer>
+</main>
+</body>
+</html>

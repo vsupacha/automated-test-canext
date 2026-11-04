@@ -1,0 +1,34 @@
+---
+title: "Automated Test Workshop"
+subtitle: "LabVIEW, TestStand, Python, myRIO, cDAQ, PicoScope"
+author: "Asst. Prof. Dr. Supachai Vorapojpisut"
+date: "11/5/2569"
+date-format: long
+title-slide-attributes:
+    data-background-image: figs/background.png
+    data-background-size: contain
+    data-background-opacity: "0.2"
+lang: en
+format: 
+    revealjs:
+        logo: figs/TSE_logo.svg
+        footer: Thailand Skill Bridge (B0C690121) BOI STEM++ grant 2026
+        slide-number: true
+        show-slide-number: all 
+        theme: default
+---
+
+{{< include 00_day_01_overview.md >}}
+
+# 1. ATE overview
+{{< include ATE_01_overview.md >}}
+
+# 2. LabVIEW quick recap
+{{< include LV_01_recap.md >}}
+
+# 3. myRIO as DAQ
+{{< include myRIO_01_overview.md >}}
+
+# 4. Workshop: frequency response test
+{{< include Day_01_workshop.md >}}
+
