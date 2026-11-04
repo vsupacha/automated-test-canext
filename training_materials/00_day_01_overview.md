@@ -72,7 +72,7 @@
 - Sample rate 500 MSample/s, memory depth 32 MSample
 - Bandwidth 50 MHz
 
-#### [NUCLEO-C562RE](https://www.st.com/en/evaluation-tools/nucleo-c562re.html) as DUT/stimulator
+#### [NUCLEO-C562RE](https://www.st.com/en/evaluation-tools/nucleo-c562re.html) as DUT
 - STM32C562RE 512KB flash/128KB RAM
 - FDCAN with CAN transceiver
 

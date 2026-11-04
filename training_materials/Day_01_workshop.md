@@ -91,7 +91,7 @@
 | myRIO | ADS1115 | 
 | -- | -- |
 | +3.3 V supply | VCC |
-|8 (DGND) | GND |
+| 8 (DGND) | GND |
 | 32 (DIO14/I2C.SCL) | SCL |
 | 34 (DIO15/I2C.SDA) | SDA |
 | 11 (DIO0) | ADDR |
@@ -112,8 +112,8 @@ Use 3.3 V pull-ups on SCL, SDA and ALERT/RDY. Keep analog inputs within GND–VD
 | State | Stimulus / action | Expected result |
 | --- | --- | --- |
 | **Setup** | Open HW; both AO = 0 V | Initial outputs at 0 V |
-| **Main: ADDR demo** | ADDR LOW/HIGH; read Config | Responds at 0x48, then 0x49 |
-| **Main: Config demo** | ADDR LOW; set/read MUX, PGA, mode | Setting fields match |
+| **Main: ADDR check** | ADDR LOW/HIGH; read Config | Responds at 0x48, then 0x49 |
+| **Main: Config check** | ADDR LOW; set/read MUX, PGA, mode | Setting fields match |
 | **Main: ADC practice** | AO0 = 2.5 V; AO1 = 0.5 V; read AIN0 − AIN1 | +2.0 V within the defined tolerance |
 | **Cleanup** | Both AO = 0 V; close HW | Also runs on Stop/error |
 
@@ -126,8 +126,3 @@ Programming architecture that allows dynamic flow to **states** depending on val
 - **Case Structure** inside a **While Loop**
 
 ![StateMachine](figs/LV_01_LabVIEW_StateMachine.jpg)\
-
-## LabVIEW + myRIO practice {.smaller}
-#### Extend the ADDR/Config example: read AIN0 − AIN1 once
-
-![StateMachine](figs/MR_02_ADS1115_template.jpg)\
