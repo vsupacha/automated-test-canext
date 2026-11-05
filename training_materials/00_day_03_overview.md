@@ -32,7 +32,7 @@
 3. Build a TestStand sequence to measure DUT opamp supply current $I_{S}$
 
     | Group | Function |
-    | - | --- |
+    | - | ---- |
     | **Setup** | Connect UDP3305S / UT8805E / NI-9269 / NI-9477 |
-    | **Main** | - Supply AUX opamp ±15 V <br> - Turn switch S7 on <br> - Supply DUT opamp ±5 V <br> - **Test that current does not exceed 1.2 mA**
-    | **Cleanup** | Turn off DUT supply <br> Turn off AUX supply <br> Turn S7 off <br> Release DAQmx/VISA resources |
+    | **Main** | - Turn ON AUX and DUT supplies <br> - **SubSequence**: $I_S$ < 1.2 mA <br> - **SubSequence**: $V_{OS}$ < 7 mV 
+    | **Cleanup** | Turn off DUT and AUX supplies <br> Turn S7 off <br> Release DAQmx/VISA resources |

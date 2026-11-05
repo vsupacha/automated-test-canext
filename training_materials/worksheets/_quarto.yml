@@ -3,3 +3,4 @@ project:
   render:
     - Day_01_Quick_Tutorials_Worksheet.qmd
     - Day_02_Top_Down_Practical_Guide.qmd
+    - Day_03_TestStand_Practical_Guide.qmd

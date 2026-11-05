@@ -15,6 +15,7 @@ From this folder:
 ```powershell
 quarto render Day_01_Quick_Tutorials_Worksheet.qmd
 quarto render Day_02_Top_Down_Practical_Guide.qmd
+quarto render Day_03_TestStand_Practical_Guide.qmd
 ```
 
 Render both guides:

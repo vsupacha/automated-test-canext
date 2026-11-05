@@ -26,7 +26,7 @@
 :::
 ::::
 
-## Instrument coordination: opamp test {.smaller}
+## Instrument coordination: [opamp test](https://www.analog.com/en/resources/analog-dialogue/articles/simple-op-amp-measurements.html) {.smaller}
 
 ![OrigDesign](figs/00_orig_design.jpg)\
 

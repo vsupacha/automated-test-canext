@@ -1,4 +1,4 @@
-## LM321 op-amp as DUT {.smaller}
+## LM321 opamp: [datasheet](https://www.ti.com/lit/ds/symlink/lm321.pdf) to spec {.smaller}
 ![LM321](figs/Instr_01_LM321_spec.jpg)\
 
 ## DUT + DIB = null detection {.smaller}
@@ -34,12 +34,11 @@
 ## $V_{OS}$ measurement {.smaller}
 :::: {.columns}
 ::: {.column width=50%}
-1. **UDP3305S**: supply the AUX opamp
-2. **NI-9239**: measure voltage at the test point
+1. **UDP3305S**: supply AUX opamp
+2. **NI-9269**: supply DUT opamp 
 :::
 ::: {.column width=50%}
-3. **NI-9477**: select the current-measurement path
-4. **NI-9269**: supply the DUT opamp
+3. **NI-9239**: measure scaled $V_{OS}$
 :::
 ::::
 ![VOS](figs/Instr_01_null_measurement.jpg)\
@@ -49,12 +48,12 @@
 
 :::: {.columns}
 ::: {.column width=50%}
-1. **UDP3305S**: supply the AUX opamp
-2. **UT8805E**: measure $I_{S}$
+1. **UDP3305S**: supply AUX opamp
+2. **NI-9269**: supply DUT opamp
 :::
 ::: {.column width=50%}
-3. **NI-9477**: select the current-measurement path
-4. **NI-9269**: supply the DUT opamp
+3. **NI-9477**: select measurement path
+4. **UT8805E**: measure $I_{S}$
 :::
 ::::
 ![IS](figs/Instr_01_IS_meas.jpg)\
