@@ -8,8 +8,8 @@
 | `ao_init` / `ao_update` | NI-9269 | DAQmx | Supply the DUT opamp |
 | `ai_init` / `ai_measure` | NI-9239 | DAQmx | Measure voltage |
 | `switch_init` / `switch_ctrl` | NI-9477 | DAQmx | Control switch ON/OFF states |
-| `pps_connect` / `pps_ctrl` | UDP3305S | VISA | Supply the AUX opamp |
-| `dmm_connect` / `dmm_read` | UT8805E | VISA | Read current |
+| `pps_init` / `pps_update` | UDP3305S | VISA | Supply the AUX opamp |
+| `dmm_init` / `dmm_read` | UT8805E | VISA | Read current |
 
 ## Workshop: LM321 $V_{OS}$ and $I_S$ test {.smaller}
 

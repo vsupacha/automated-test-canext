@@ -98,12 +98,12 @@
 #### Build a sequence to power the AUX opamp for 3 seconds, then turn it off
 
 :::: {.columns}
-::: {.column width=65%}
+::: {.column width=60%}
 ![PPS](figs/TS_02_PPS_Demo_Crop.jpg)\
 :::
-::: {.column width=35%}
+::: {.column width=40%}
 2. Add an action to the **Setup group**
-    - VI `pps_connect` &rarr; `FileGlobals.ppsRef`
+    - VI `pps_init` &rarr; `FileGlobals.ppsRef`
 3. Add actions to the **Main group**
     - VI `pps_ctrl` &larr; `Locals.Vsp`
     - Add a 3-second **Wait** from Synchronization

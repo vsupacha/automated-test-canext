@@ -27,4 +27,4 @@ format:
 {{< include TS_02_TestStand_workflow.md >}}
 
 # 3. Workshop: LM321 test
-{{< include TS_03_TestStand_practice.md >}}
+{{< include Day_03_TestStand.md >}}

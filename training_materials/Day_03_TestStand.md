@@ -8,7 +8,7 @@
 :::: {.columns}
 ::: {.column width=50%}
 1. **UDP3305S**: supply CH1 (15 V) / CH2 (15 V)
-2. **UT8805E**: measure DC current using the 20 mA range
+2. **UT8805E**: measure DC current (20 mA range)
 :::
 ::: {.column width=50%}
 3. **NI-9477**: control switch S7
@@ -21,7 +21,7 @@
 
 | Group | Code modules | Function | Variables | 
 | :- | :- | :---- | :-- |
-| **Setup** | `pps_connect` <br> `dmm_connect` <br> `switch_init` <br> `ao_init` | Connect UDP3305S <br> Connect UT8805E <br> Connect NI-9477 <br> Connect NI-9269 | &rarr; `FG.ppsRef`^[VISA/DAQmx resources use the [`LabVIEWIOControl` type](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000YGp8CAG&l=en-TH)] <br> &rarr; `FG.dmmRef`^[LC means Locals, FG means FileGlobals, SG means StationGlobals] <br> &rarr; `FG.switchRef` <br> &rarr; `FG.aoRef` |
+| **Setup** | `pps_init` <br> `dmm_init` <br> `switch_init` <br> `ao_init` | Connect UDP3305S <br> Connect UT8805E <br> Connect NI-9477 <br> Connect NI-9269 | &rarr; `FG.ppsRef`^[VISA/DAQmx resources use the [`LabVIEWIOControl` type](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000YGp8CAG&l=en-TH)] <br> &rarr; `FG.dmmRef`^[LC means Locals, FG means FileGlobals, SG means StationGlobals] <br> &rarr; `FG.switchRef` <br> &rarr; `FG.aoRef` |
 | **Main** | `pps_ctrl` <br> `switch_ctrl` <br> `ao_update` <br> Numeric Limit Test (`dmm_read`) | Supply AUX ±15 V <br> Turn S7 on <br> Supply DUT ±5 V <br> Test $I_{S}$ < 1.2 mA | |
 | **Cleanup** |`visa_close` <br> `daqmx_stop` | Close the VISA connection <br> Close the DAQmx connection | &larr; ... <br> &larr; ... |
 
